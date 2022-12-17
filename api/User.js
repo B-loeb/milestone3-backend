@@ -9,9 +9,9 @@ const bcrypt = require('bcrypt');
 //Signup
 router.post('/signup', (req, res) => {
     let {name, email, password} = req.body;
-    name = name.trim();
-    email = email.trim();
-    password = password.trim();
+    name = name;
+    email = email;
+    password = password;
 
     if (name == "" || email == "" || password == "") {
         res.json({
